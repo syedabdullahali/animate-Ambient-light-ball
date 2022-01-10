@@ -57,9 +57,9 @@ animation: animate  20s linear infinite;
    background-color:fuchsia;
    position: relative;
    top: 40px;
-   animation-name: king1;
-   animation-duration: 4s;
-   animation-iteration-count: infinite;
+  
+    animation:ball-1-animation 4s infinite;
+    
    box-shadow:  0 0px 120px #ff00f2,
    0 0 60px #e810fc,
    0 0 120px #ff1be1,
@@ -67,7 +67,7 @@ animation: animate  20s linear infinite;
    0 0 360px rgb(247, 0, 255);
 }
 
-@keyframes king1{
+@keyframes ball-1-animation {
     from {right:5vw;}
     to {right:-50vw;}
   }
@@ -79,7 +79,7 @@ animation: animate  20s linear infinite;
     background-color:rgb(9, 73, 248) ;
     position: relative;
     top: 40px;
-    animation:example 4s infinite;
+    animation:ball-2-animation 4s infinite;
     
     
     box-shadow:  0 0px 20px #0026ff,
@@ -91,7 +91,7 @@ animation: animate  20s linear infinite;
 
 
   
-  @keyframes example {
+  @keyframes ball-2-animation {
     from {top:180px;}
     to {top:-180px;}
   }
@@ -103,7 +103,7 @@ animation: animate  20s linear infinite;
     background-color:rgb(248, 3, 215);
     position: relative;
     top: 40px;
-    animation:king 4s infinite;
+    animation:ball-3-animation 4s infinite;
     box-shadow:  0 0px 120px #ff00d4,
     0 0 60px #fc10fc,
     0 0 120px #f71bff,
@@ -111,7 +111,7 @@ animation: animate  20s linear infinite;
     0 0 360px rgb(255, 0, 212);
 }
 
-@keyframes king{
+@keyframes ball-3-animation{
     from {left:5vw;}
     to {left:-50vw;}
   }
