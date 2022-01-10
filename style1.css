@@ -1,0 +1,174 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 8%, 9%);
+    margin-top: 2%;
+    
+}
+
+
+
+#container{
+    height: 90vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+   background: linear-gradient(0deg,rgb(4, 2, 88),#550151);
+   position: relative;
+   margin: auto;
+
+}
+
+#container:before,
+#container:after{
+content: "";
+position: absolute;
+top:-7px;
+left:-7px;
+background: linear-gradient(45deg ,#fb0094,#0000ff,#00ff00,#f700ff,#eeff00,#fb0094,#0000ff,#00ff00);
+background-size:400% ;
+width: calc(100% + 14px);
+height: calc(100% + 14px);
+z-index: -1;
+animation: animate  20s linear infinite;
+}
+#container:after{
+    filter: blur(60px);
+}
+@keyframes animate{
+    0%{
+        background-color: 0 0;
+    }
+    50%{
+         background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0 ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ball1{
+   height: 200px;
+   width:200px;
+   border-radius: 50%;
+   background-color:fuchsia;
+   position: relative;
+   top: 40px;
+   animation-name: king1;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   box-shadow:  0 0px 120px #ff00f2,
+   0 0 60px #e810fc,
+   0 0 120px #ff1be1,
+   0 0 240px #f029f7,
+   0 0 360px rgb(247, 0, 255);
+}
+
+@keyframes king1{
+    from {right:5vw;}
+    to {right:-50vw;}
+  }
+
+#ball2{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:rgb(9, 73, 248) ;
+    position: relative;
+    top: 40px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow:  0 0px 20px #0026ff,
+    0 0 60px #1034fc,
+    0 0 120px #1b3dff,
+    0 0 240px #3729f7,
+    0 0 360px blue;
+ }
+
+
+  
+  @keyframes example {
+    from {top:180px;}
+    to {top:-180px;}
+  }
+
+#ball3{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    background-color:rgb(248, 3, 215);
+    position: relative;
+    top: 40px;
+    animation-name: king;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    box-shadow:  0 0px 120px #ff00d4,
+    0 0 60px #fc10fc,
+    0 0 120px #f71bff,
+    0 0 240px #f729d5,
+    0 0 360px rgb(255, 0, 212);
+}
+
+@keyframes king{
+    from {left:5vw;}
+    to {left:-50vw;}
+  }
+
+
+@media (max-width:1000px){
+    #ball1{
+        height: 150px;
+        width:150px;
+        
+     }
+     
+     #ball2{
+         height: 150px;
+         width:150px;
+         
+      }
+     
+     #ball3{
+         height: 150px;
+         width:150px;
+       
+     }  
+}
+
+@media (max-width:621px){
+    #ball1{
+        height: 80px;
+        width:80px;
+        
+     }
+     
+     #ball2{
+         height: 80px;
+         width:80px;
+         
+      }
+     
+     #ball3{
+         height: 80px;
+         width:80px;
+       
+     }  
+}
