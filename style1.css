@@ -79,9 +79,9 @@ animation: animate  20s linear infinite;
     background-color:rgb(9, 73, 248) ;
     position: relative;
     top: 40px;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation:example 4s infinite;
+    
+    
     box-shadow:  0 0px 20px #0026ff,
     0 0 60px #1034fc,
     0 0 120px #1b3dff,
@@ -103,9 +103,7 @@ animation: animate  20s linear infinite;
     background-color:rgb(248, 3, 215);
     position: relative;
     top: 40px;
-    animation-name: king;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation:king 4s infinite;
     box-shadow:  0 0px 120px #ff00d4,
     0 0 60px #fc10fc,
     0 0 120px #f71bff,
